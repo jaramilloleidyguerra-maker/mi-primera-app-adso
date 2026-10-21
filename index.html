@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi tarjeta de presentación | Leidis Jaramillo</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #ffe4ec, #f8bbd0, #fce4ec);
+            margin: 0;
+            padding: 30px 15px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .tarjeta {
+            background-color: #fffafd;
+            max-width: 550px;
+            width: 100%;
+            padding: 30px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(194, 24, 91, 0.2);
+            border: 2px solid #f8bbd0;
+            box-sizing: border-box;
+        }
+
+        .encabezado {
+            background: linear-gradient(135deg, #ec407a, #f48fb1);
+            color: white;
+            padding: 25px 15px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+        }
+
+        .icono {
+            background-color: #ffffff;
+            color: #e91e63;
+            width: 65px;
+            height: 65px;
+            line-height: 65px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin: 10px 0;
+            text-transform: capitalize;
+        }
+
+        .ocupacion {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .rol {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .presentacion,
+        .habilidades {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #c2185b;
+            font-size: 21px;
+            margin-bottom: 15px;
+        }
+
+        .presentacion p {
+            color: #704858;
+            font-size: 15px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .habilidades ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .habilidades li {
+            background-color: #fce4ec;
+            color: #880e4f;
+            padding: 13px;
+            margin-bottom: 10px;
+            border-radius: 12px;
+            border-left: 5px solid #ec407a;
+            transition: 0.3s;
+        }
+
+        .habilidades li:hover {
+            background-color: #f8bbd0;
+            transform: translateX(5px);
+        }
+
+        button {
+            background: linear-gradient(135deg, #ec407a, #d81b60);
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 5px 12px rgba(216, 27, 96, 0.2);
+        }
+
+        button:hover {
+            background-color: #ad1457;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #f8bbd0;
+            color: #c2185b;
+            font-size: 14px;
+        }
+
+        @media (max-width: 480px) {
+            .tarjeta {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+            h2 {
+                font-size: 19px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="tarjeta">
+
+        <header class="encabezado">
+            <div class="icono">&lt;/&gt;</div>
+
+            <h1>Leidis Jaramillo</h1>
+
+            <p class="ocupacion">Estudiante</p>
+
+            <p class="rol">
+                Aprendiz de Análisis y Desarrollo de Software
+            </p>
+        </header>
+
+        <section class="presentacion">
+            <h2>Bienvenido a mi espacio digital ✨🌸</h2>
+
+            <p>
+                Hola, soy Leidis Jaramillo, tengo 19 años.
+                Actualmente estudio Análisis y Desarrollo de Software
+                y me voy a desempeñar en el área de comercio exterior.
+                Me apasiona aprender cosas nuevas, la tecnología,
+                la belleza y la creación de contenido.
+            </p>
+        </section>
+
+        <section class="habilidades">
+            <h2>Mis áreas de interés 💗</h2>
+
+            <ul>
+                <li>💻 Desarrollo de páginas web</li>
+                <li>💄 Belleza</li>
+                <li>🌎✈️ Comercio exterior</li>
+                <li>📱 Creación de contenido</li>
+            </ul>
+        </section>
+
+        <button onclick="saludar()">
+            ✨ Haz clic aquí ✨
+        </button>
+
+        <footer>
+            <p>🌸 Hecho con amor por Leidis Jaramillo 💗</p>
+        </footer>
+
+    </main>
+
+    <script>
+        function saludar() {
+            alert("¡Hola! 💗 Bienvenido a mi espacio digital. ¡Gracias por visitarme! 🌸");
+        }
+    </script>
+
+</body>
+</html>
